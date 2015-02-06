@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  picture: MyString
+  geox: MyString
+  geoy: MyString
+  uploadTime: MyString
+  category: MyString
+  uploadedBy: MyString
+
+two:
+  picture: MyString
+  geox: MyString
+  geoy: MyString
+  uploadTime: MyString
+  category: MyString
+  uploadedBy: MyString
