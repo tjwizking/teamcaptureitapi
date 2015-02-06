@@ -24,6 +24,11 @@ gem 'aws-sdk'
 gem 'pry'
 #gem 'pry-debugger'
 
+
+# Gemfile
+gem "hashie_rails"
+
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"

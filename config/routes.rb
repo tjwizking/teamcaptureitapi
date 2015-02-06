@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root 'pictures#index'
   resources :pictures
 
+  post  '/pictures/new' => 'pictures#new'
+   post  '/pictures/create' => 'pictures#create'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
