@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @photo.caption %>
+</p>
+
+<p>
+  <strong>Geox:</strong>
+  <%= @photo.geox %>
+</p>
+
+<p>
+  <strong>Geoy:</strong>
+  <%= @photo.geoy %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @photo.category %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @photo.image.url(:medium),class:"image", style:"text-align:center;" %>
+</p>
+
+<p>
+  <strong>Uploadedby:</strong>
+  <%= @photo.uploadedBy %>
+</p>
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

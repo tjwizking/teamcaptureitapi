@@ -1,10 +1,10 @@
-<%= form_for(@picture, remote: true)  do |f| %>
-  <% if @picture.errors.any? %>
+<%= form_for(@photo) do |f| %>
+  <% if @photo.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@picture.errors.count, "error") %> prohibited this picture from being saved:</h2>
+      <h2><%= pluralize(@photo.errors.count, "error") %> prohibited this photo from being saved:</h2>
 
       <ul>
-      <% @picture.errors.full_messages.each do |message| %>
+      <% @photo.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :picture %><br>
-     <%= f.file_field :image %>
+    <%= f.label :caption %><br>
+    <%= f.text_field :caption %>
   </div>
   <div class="field">
     <%= f.label :geox %><br>
@@ -24,18 +24,17 @@
     <%= f.text_field :geoy %>
   </div>
   <div class="field">
-    <%= f.label :uploadTime %><br>
-    <%= f.text_field :uploadTime %>
-  </div>
-  <div class="field">
     <%= f.label :category %><br>
     <%= f.text_field :category %>
   </div>
-   <div class="field">
-    <%= f.label :caption %><br>
-    <%= f.text_field :caption %>
+  <div class="field">
+    <%= f.label :image %><br>
+     <%= f.file_field :image %>
   </div>
-  
+  <div class="field">
+    <%= f.label :uploadedBy %><br>
+    <%= f.text_field :uploadedBy %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
